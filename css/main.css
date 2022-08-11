@@ -1457,7 +1457,7 @@ a.scrolltotop-btn:before {
 .rooms__item::before {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 44px;
   content: url("../img/bubbles-left.png");
   width: 26px;
   height: 45px;
@@ -2161,6 +2161,70 @@ a.scrolltotop-btn:before {
       align-self: center;
 }
 
+.rooms-wrapper {
+  background-image: url("../img/background-rooms.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: right;
+}
+
+.rooms-panel {
+  display: none;
+}
+
+.rooms__inner {
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.rooms__items {
+  background: #F5F5F5;
+  width: 288px;
+  border-radius: 70px 70px 0px 0px;
+  margin-bottom: 45px;
+}
+
+.rooms-img {
+  width: auto;
+}
+
+.rooms-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 39px 39px 0px 0px;
+  padding: 26px 26px 0 26px;
+  margin-bottom: 24px;
+}
+
+.relaxation__item {
+  background-image: url("../img/background-rooms.jpg");
+  height: 360px;
+  background-size: cover;
+  background-position: right;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.relaxation__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Forum", sans-serif;
+  color: #202020;
+  background: #FFFFFF;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-radius: 100px 100px 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 640px;
+  padding-left: 41px;
+  padding-right: 41px;
+  position: absolute;
+  bottom: -32px;
+}
+
 @media (min-width: 768px) {
   .content figure {
     float: left;
@@ -2436,10 +2500,72 @@ a.scrolltotop-btn:before {
     font-size: 30px;
     line-height: 35px;
   }
+
+  .rooms-wrapper {
+    height: 250px;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+  }
+
+  .rooms-panel {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 621px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 34px;
+    left: 2%;
+    padding-left: 17px;
+  }
+
+  .rooms-panel__date {
+    background: #EEEEEE;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .rooms-panel__date::after {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    content: '\e809';
+    font-family: 'fontello';
+    font-size: 10px;
+  }
+
+  .rooms__items {
+    margin-left: 70px;
+  }
+
+  .relaxation__item {
+    height: 400px;
+  }
+
+  .relaxation__title {
+    font-size: 30px;
+    line-height: 50px;
+    left: 22%;
+  }
 }
 
 @media (min-width: 768px) and (min-width: 1366px) {
   .panel__date {
+    width: 45px;
+    height: 45px;
+  }
+
+  .rooms-panel__date {
     width: 45px;
     height: 45px;
   }
@@ -2750,6 +2876,48 @@ a.scrolltotop-btn:before {
     line-height: 50px;
     margin-bottom: 55px;
   }
+
+  .rooms-wrapper {
+    height: 380px;
+  }
+
+  .rooms__item {
+    margin-top: 40px;
+  }
+
+  .rooms-panel {
+    width: 977px;
+    bottom: 50px;
+    left: 10%;
+    height: 70px;
+  }
+
+  .rooms__inner {
+    margin-top: 70px;
+  }
+
+  .rooms__items {
+    width: 408px;
+    height: 455px;
+    margin-left: 200px;
+  }
+
+  .rooms-img img {
+    border-radius: 50px 50px 0px 0px;
+    padding: 40px 34px 0 34px;
+  }
+
+  .relaxation__item {
+    height: 550px;
+  }
+
+  .relaxation__title {
+    font-size: 40px;
+    left: 31%;
+    padding-top: 27px;
+    padding-left: 93px;
+    padding-right: 93px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -2921,6 +3089,39 @@ a.scrolltotop-btn:before {
     font-size: 50px;
     line-height: 55px;
     margin-bottom: 78px;
+  }
+
+  .rooms-wrapper {
+    background-image: url("../img/background-rooms-desktop.jpg");
+    height: 445px;
+  }
+
+  .rooms-panel {
+    width: 1111px;
+    bottom: 52px;
+    left: 17%;
+    height: 80px;
+  }
+
+  .rooms__items {
+    width: 580px;
+    height: 658px;
+  }
+
+  .rooms__items:nth-child(1) {
+    margin-left: 350px;
+  }
+
+  .rooms__items:nth-child(3) {
+    margin-left: 350px;
+  }
+
+  .relaxation__title {
+    font-size: 50px;
+    line-height: 55px;
+    padding-top: 50px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
